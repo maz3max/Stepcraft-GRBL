@@ -28,6 +28,7 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
+LIBS:GRBL_Stepcraft-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
@@ -91,7 +92,7 @@ Text Label 4900 3500 0    60   ~ 0
 A4(SDA)
 Text Label 4900 3400 0    60   ~ 0
 A5(SCL)
-Text Notes 5000 3200 0    60   ~ 0
+Text Notes 5000 2650 0    60   ~ 0
 Holes
 Text Notes 3100 2950 0    60   ~ 0
 Shield for Arduino that uses\nthe same pin disposition\nlike "Uno" board Rev 3.
@@ -207,10 +208,6 @@ F 3 "" H 5250 2850 50  0000 C CNN
 	1    5250 2850
 	0    -1   -1   0   
 $EndComp
-NoConn ~ 4950 3050
-NoConn ~ 5050 3050
-NoConn ~ 5150 3050
-NoConn ~ 5250 3050
 $Comp
 L CONN_01X08 P4
 U 1 1 56D7164F
@@ -500,5 +497,49 @@ F 2 "" H 2400 4300 50  0000 C CNN
 F 3 "" H 2400 4300 50  0000 C CNN
 	1    2400 4300
 	0    1    1    0   
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 593DFBAD
+P 5250 3050
+F 0 "#PWR?" H 5250 2800 50  0001 C CNN
+F 1 "GND" H 5255 2877 50  0000 C CNN
+F 2 "" H 5250 3050 50  0001 C CNN
+F 3 "" H 5250 3050 50  0001 C CNN
+	1    5250 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 593DFBD3
+P 5150 3050
+F 0 "#PWR?" H 5150 2800 50  0001 C CNN
+F 1 "GND" H 5155 2877 50  0000 C CNN
+F 2 "" H 5150 3050 50  0001 C CNN
+F 3 "" H 5150 3050 50  0001 C CNN
+	1    5150 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 593DFBF2
+P 5050 3050
+F 0 "#PWR?" H 5050 2800 50  0001 C CNN
+F 1 "GND" H 5055 2877 50  0000 C CNN
+F 2 "" H 5050 3050 50  0001 C CNN
+F 3 "" H 5050 3050 50  0001 C CNN
+	1    5050 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 593DFC11
+P 4950 3050
+F 0 "#PWR?" H 4950 2800 50  0001 C CNN
+F 1 "GND" H 4955 2877 50  0000 C CNN
+F 2 "" H 4950 3050 50  0001 C CNN
+F 3 "" H 4950 3050 50  0001 C CNN
+	1    4950 3050
+	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
